@@ -1,0 +1,23 @@
+name: 01_勉強会管理 (Parent Issue)
+description: 勉強会単位のまとめと進行管理
+title: "[YYYYMMDD] workshop: No.XX"
+labels: ["勉強会"]
+body:
+  - type: textarea
+    id: agenda
+    attributes:
+      label: アジェンダ / 目的
+      placeholder: 簡単にまとめてください
+  - type: textarea
+    id: pages
+    attributes:
+      label: 教科書の範囲
+      placeholder: 第N章、◯◯の範囲など
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: 完了チェックリスト
+      options:
+        - label: 参加者は事前に教科書を読んでいる
+        - label: 参加者は事前にQAを登録している
+        - label: 勉強会の結果をまとめてmainにマージした

@@ -1,0 +1,29 @@
+name: 02_QA管理 (Sub Issue)
+description: 勉強会中に出たQAを管理します
+title: "[QA] 質問内容を記入してください"
+labels: ["QA", "サブIssue"]
+body:
+  - type: textarea
+    id: page
+    attributes:
+      label: 教科書の該当箇所
+      placeholder: 第N章 xxxセクションの○○について。紙の書籍の(もしくは電子書籍の)p.123。
+  - type: textarea
+    id: question
+    attributes:
+      label: 質問
+      placeholder: 質問内容を明確に記載してください
+  - type: textarea
+    id: conclusion
+    attributes:
+      label: 結論
+      description: 決まった内容、または現時点の回答
+      placeholder: 例）正式な仕様は◯◯、△△案も検討されたが不採用
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: 完了チェックリスト
+      options:
+        - label: 各回の親Issueに紐づけていること
+        - label: 議論の結果がコメントに残っていること
+        - label: （WANT）議論の結果が結論としてまとめられていること
